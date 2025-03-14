@@ -13,32 +13,37 @@ public class Persona {
     
     //ATRIBUTOS
     String nombre;
-    int edad;
+    private int edad;
     String ciudadResidencia;
     String profesion;
     String dni;
     
     //CONSTRUCTOR
     
-    public Persona(String s, int n, String d){
+    public Persona(String s, int n, String d, String c, String p){
         
         nombre = s;
         edad = n;
-        ciudadResidencia = "sin ciudad";
-        profesion = "sin profesion";
+        ciudadResidencia = c;
+        profesion = p;
         dni = d;
-        
+
     }
     
     //METODOS
+    public void establecerEdad(int n){
+        if(n>=0) edad = n;
+        else System.out.println("No se pueden poner edades negativas");
+    }
+    
     public void mostrarDatos(){
         
+        System.out.println("");
         System.out.println("Nombre: "+nombre);
         System.out.println("DNI: "+dni);
         System.out.println("Edad: "+edad);
         System.out.println("Ciudad: "+ciudadResidencia);
         System.out.println("Profesión: "+profesion);
-        System.out.println("");
         
     }
 }

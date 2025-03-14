@@ -16,8 +16,10 @@ public class POO {
      */
     public static void main(String[] args) {
         
-        Persona p1 = new Persona("Pepe",40,"202020A");
-        Persona p2 = new Persona("Marta",25,"303030B");
+        Persona p1 = new Persona("Pepe",40,"202020A","Granada","Abogado");
+        Persona p2 = new Persona("Marta",25,"303030B","Valencia","Enfermera");
+       
+        p2.establecerEdad(34);
         
         p1.mostrarDatos();
         p2.mostrarDatos();
