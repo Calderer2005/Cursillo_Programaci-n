@@ -31,6 +31,7 @@ public class Persona {
     }
     
     //METODOS
+    //encapsulamos la info pa que solo pueda ser modificada como yo quiero
     public void establecerEdad(int n){
         if(n>=0) edad = n;
         else System.out.println("No se pueden poner edades negativas");
@@ -44,6 +45,8 @@ public class Persona {
         System.out.println("Edad: "+edad);
         System.out.println("Ciudad: "+ciudadResidencia);
         System.out.println("Profesión: "+profesion);
+        System.out.println("");
+        System.out.println("-----------------------------------------");
         
     }
 }

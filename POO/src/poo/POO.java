@@ -20,9 +20,15 @@ public class POO {
         Persona p2 = new Persona("Marta",25,"303030B","Valencia","Enfermera");
        
         p2.establecerEdad(34);
+
+        CuentaBancaria cuenta1 = new CuentaBancaria(1,p1);
+        CuentaBancaria cuenta2 = new CuentaBancaria(2,p2);
         
-        p1.mostrarDatos();
-        p2.mostrarDatos();
+        cuenta1.ingresar(100);
+        cuenta2.ingresar(200);
+
+        cuenta1.mostrarDatos();
+        cuenta2.mostrarDatos();
     }
     
 }
